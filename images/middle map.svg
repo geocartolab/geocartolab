@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="800px" height="564px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 80000 56439"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+<script type="text/ecmascript"> <![CDATA[
+	function show(n)
+	 {	 
+	 document.getElementById("map"+n).setAttribute("visibility","visible");	 
+	 }
+	 
+	 function hide(n)
+	 {
+	  document.getElementById("map"+n).setAttribute("visibility","hidden");
+	 }
+	 
+	 
+	 
+	 	]]> </script>
+ 
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#332C2B;stroke-width:21.419;stroke-opacity:0.000000}
+    .str1 {stroke:#332C2B;stroke-width:21.419;stroke-opacity:0.000000}
+    .str2 {stroke:#7C6FB0;stroke-width:190.6667}
+    .fil1 {fill:none}
+    .fil0 {fill:#E62129;fill-opacity:0.000000}
+   ]]>
+  </style>
+   <clipPath id="id0">
+    <rect x="43" y="-30" width="79906" height="56369"/>
+   </clipPath>
+ </defs>
+ <g id="figure">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g style="clip-path:url(#id0)">
+   <image x="43" y="-30" width="79906" height="56369" xlink:href="middle map_Images\middle map_ImgID1.png"/>
+  </g>
+ </g>
+ <g id="control">
+  <metadata id="CorelCorpID_1Corel-Layer"/>
+   <a xlink:href="../map4.htm" target="_blank" >
+  <polygon id="_4" onmouseover="show(4)" onmouseout="hide(4)" onclick="" class="fil0 str0" points="3966,17019 19909,17019 19909,29033 3966,29033 "/>
+   </a>
+  <a xlink:href="../map3.htm" target="_blank" >
+  <polygon id="_3" onmouseover="show(3)" onmouseout="hide(3)" class="fil0 str1" points="3966,4531 19909,4531 19909,16546 3966,16546 "/>
+   </a>
+   <a xlink:href="../map1.htm" target="_blank" >
+  <polygon id="_1" onmouseover="show(1)" onmouseout="hide(1)" class="fil0 str0" points="26974,4012 76996,4012 76996,41245 37099,41245 37099,30024 26974,30024 "/>
+  </a>
+   <a xlink:href="../map2.htm" target="_blank" >
+  <polygon id="_2" onmouseover="show(2)" onmouseout="hide(2)"  class="fil0 str0" points="3550,30024 37099,30024 37099,52806 3550,52806 "/>
+  </a>
+  <rect visibility="hidden" id="map4" class="fil1 str2" x="3966" y="17019" width="21658" height="12014"/>
+  <rect visibility="hidden" id="map3" class="fil1 str2" x="3966" y="3976" width="21658" height="12570"/>
+  <rect visibility="hidden" id="map2" class="fil1 str2" x="3550" y="30024" width="33549" height="22782"/>
+  <rect visibility="hidden" id="map1" class="fil1 str2" x="26710" y="4012" width="50286" height="37233"/>
+ </g>
+</svg>

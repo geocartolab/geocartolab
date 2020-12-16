@@ -1,0 +1,244 @@
+
+ 
+ .box {
+          
+            width: 200px;
+            border: 2px solid #2F709A;
+            outline: medium none;
+           
+            z-index: 1050;
+            background: none repeat scroll 0 0 white;
+                   
+            display: none;
+        }
+		
+.legendbox{	
+		  height: 280px;
+		position: absolute;
+		right: 5%;
+		margin-top: 430px;
+		}
+		
+.layerbox{
+		height: 200px;
+		margin-top: 190px;
+		position: absolute;
+		right: 5%;
+		}		
+
+        .instruction {
+            height: 550px;
+            width: 800px;
+            border: 2px solid #2F709A;
+            outline: medium none;
+            position: absolute;
+            z-index: 1050;
+            background: none repeat scroll 0 0 white;
+            margin-left: 35%;
+            margin-top: 20%;
+            display: none;
+        }
+
+        
+
+        .box h1 {
+            background: none repeat scroll 0 0 #2F709A;
+            border-bottom: 1px solid #2F709A;
+            border-top: 1px solid #2F709A;
+            font-size: 16px;
+            padding: 5px;
+            text-align: left;
+        }
+
+        .instruction h1 {
+            background: none repeat scroll 0 0 #2F709A;
+            border-bottom: 1px solid #2F709A;
+            border-top: 1px solid #2F709A;
+            font-size: 16px;
+            padding: 5px;
+            text-align: left;
+        }
+		
+	.toolbar{position:fixed; top:170;
+	
+	}
+		  
+    <style type="text/css">
+        body {
+            margin-left: 0px;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            font-family: "Microsoft JhengHei", "微软雅黑";
+            font-size: 14px;
+            font-style: normal;
+            line-height: 30px;
+            color: 6a7170;
+        }
+
+        .topnav {
+            width: 293px;
+            padding: 40px 28px 25px 0;
+            font-family: "Microsoft JhengHei", "微软雅黑";
+            font-size: 14px;
+            font-style: normal;
+            line-height: normal;
+            color: #ffffff;
+        }
+
+        ul.topnav {
+            padding: 0;
+            margin: 0;
+            font-size: 14px;
+            line-height: 0.5em;
+            list-style: none;
+        }
+
+            ul.topnav li {
+            }
+
+                ul.topnav li a {
+                    line-height: 10px;
+                    font-size: 14px;
+                    padding: 10px 5px;
+                    color: #ffffff;
+                    display: block;
+                    text-decoration: none;
+                    font-weight: bolder;
+                }
+
+                    ul.topnav li a:hover {
+                        background-color: #4d5565;
+                        color: white;
+                    }
+
+            ul.topnav ul {
+                margin: 0;
+                padding: 0;
+                display: none;
+            }
+
+                ul.topnav ul li {
+                    margin: 0;
+                    padding: 0;
+                    clear: both;
+                }
+
+                    ul.topnav ul li a {
+                        padding-left: 20px;
+                        font-size: 14px;
+                        font-weight: normal;
+                        outline: 0;
+                    }
+
+                        ul.topnav ul li a:hover {
+                            background-color: #5d6575;
+                            color: #675C7C;
+                        }
+
+                ul.topnav ul ul li a {
+                    color: silver;
+                    padding-left: 40px;
+                }
+
+                    ul.topnav ul ul li a:hover {
+                        background-color: #D3CEB8;
+                        color: #675C7C;
+                    }
+
+            ul.topnav span {
+                float: right;
+            }
+
+        <style type="text/css" > .wrap-menu {
+            width: 778px;
+            margin: 0 auto;
+            overflow: auto;
+            width: 300px;
+            background: #F6F6F6;
+            font: 12px/1.5 Tahoma,Arial,sans-serif;
+        }
+
+        .wrap-menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-family: "微软雅黑";
+            font-size: 14px;
+            font-style: normal;
+            line-height: normal;
+            color: #e9eaec;
+        }
+
+            .wrap-menu ul li {
+                text-indent: 1.5em;
+                white-space: nowrap;
+            }
+
+                .wrap-menu ul li h2 {
+                    cursor: pointer;
+                    height: 100%;
+                    width: 100%;
+                    margin: 0 0 1px 0;
+                    color: #fff;
+                    background: #505969;
+                    font-family: '微软雅黑';
+                    font-size: 14px;
+                    line-height: 40px;
+                }
+
+                .wrap-menu ul li a {
+                    display: block;
+                    outline: none;
+                    height: 35px;
+                    line-height: 35px;
+                    margin: 1px 0;
+                    color: #e9eaec;
+                    text-decoration: none;
+                    font-family: "微软雅黑", "Microsoft YaHei UI";
+                    font-size: 12px;
+                    font-style: normal;
+                }
+
+                .wrap-menu ul li img {
+                    margin-right: 10px;
+                    margin-left: -17px;
+                    margin-top: 9px;
+                    width: 7px;
+                    height: 7px;
+                    background: url(images/arrow.gif) no-repeat;
+                    border: none;
+                }
+
+                    .wrap-menu ul li img.unfold {
+                        background-position: 0 -9px;
+                    }
+
+                .wrap-menu ul li a:hover {
+                    background-color: #6b7589;
+                    background-image: none;
+                    font-family: "微软雅黑", "Microsoft YaHei UI";
+                    font-size: 12px;
+                    font-style: normal;
+                    line-height: 35px;
+                    color: #e9eaec;
+                }
+    </style>
+	
+	<style type="text/css">
+<!--
+.unnamed1 {
+    background-image:"supplement/12.png";
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+-->
+</style> 
+
+<style type="text/css">
+<!--
+.STYLE6 {color: #b1b4bb}
+.STYLE7 {color: #FFFFFF; }
+.STYLE8 {font-size: 36px}
+-->
+</style>

@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>The spatial-temporal visualization of COVID-19
+    </title>
+
+</script>
+  
+    <link href="css/css.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="static/css/ui2.css?2013032917" />
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/zzsc.js" type="text/javascript"></script>
+	<script src="js/movewin.js" type="text/javascript"></script>
+
+
+
+</head>
+
+<body onload="MM_preloadImages('images/6666.jpg','images/b2.jpg','images/c2.jpg','images/c4.jpg','images/c5.jpg','images/c6.jpg','images/a2.jpg','images/a4.jpg','images/a6.jpg');move()">
+
+    <table width="100%" height="0" border="0" cellpadding="0" cellspacing="0" bgcolor="0d2435">
+        <tr>
+             <td >
+                <div class="instruction" id="mapInstruction" name="win">
+                    <a class="close" id="mapInstructionClose">×</a>
+                    <h1 >Map description </h1>
+                    <div style="height: 360px; overflow: auto">
+					<p/>
+                        &nbsp &nbsp  
+					</div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <style>
+    .tool {
+        display:table;
+        table-layout:fixed;
+        position:fixed;
+        top:10px;
+        left: 40px;
+        width:200px;
+    }
+    </style>
+    <table class="tool" display="block" overflow-y="scroll">   
+        <tr class="toolbar">
+            <div >
+            <th id="zoomIn">
+                <img src="images/zoomIn.png" title="Zoom in" name="zommIn" width="100%" height="80%" border="0" /></th>
+            <th id="zoomOut">
+                <img src="images/zommOut.png" title="Zoom out" name="zommOut"  width="100%" height="80%"border="0" /></th>
+            <th id="zoomInLK">
+                <img src="images/ReczoomIn.png" title="Rectangle zoom in" name="zommInLK"  width="100%" height="80%" border="0" /></th>
+            <th id="mapPan">
+                <img src="images/pan.png" title="Map pan" name="mapPan"  width="100%" height="80%" border="0" /></th>
+            <th id="fullScreen">
+                <img src="images/fullScreen.png" title="Full map" name="fullScreen"  width="100%" height="80%" border="0" /></th>
+            <th id="open">
+                <img src="images/OpenInformation.png" title="Open relevant information" name="open"  width="100%" height="80%" border="0" /></th>
+            </div>              
+         </tr>
+</table>
+
+    <table class="Main" cellpadding="0" cellspacing="0" bgcolor="ffffff">  
+        <tr>
+            <td width="100%" align="left" valign="top">		
+			 <embed id="svgEmbed" width="100%" pluginspage=http://www.adobe.com/svg/viewer/install/ src="map/COVID7.svg"  type="image/svg+xml"/>			          	
+            </td>              
+        </tr>        
+    </table>       
+     
+    <div>
+		<div class="Legend" ></div>
+		<embed id="mainmap" style="position: fixed;
+		top: 60px; left: 25px; width:225px;" pluginspage=http://www.adobe.com/svg/viewer/install/  src="map/legend3.svg"  type="image/svg+xml"/>
+		</div>
+    <script type="text/javascript">
+        //工具条按钮
+            $(function () {
+            $(".toolbar th").click(function () {
+                var type = "";
+                type = $(this).attr("id");
+                if (type != "") {
+                    switch (type) {
+                        case "zoomIn":
+                            zoomIn();
+                            break;
+                        case "zoomOut":
+                            zoomOut();
+                            break;
+                        case "zoomInLK":
+                            mapRectZoom();
+                            break;
+                        case "mapPan":
+                            mapPan();
+                            break;
+                        case "fullScreen":
+                            fullscreen();
+                            break;
+                        case "layerControl":
+                            layerControl();
+                            break;
+                        case "open":
+                            OpenInformation();
+                            break;
+                    }
+                }
+            });
+
+            $("#layerControlaBoxClose").click(function () {
+                var box = $("#layerControlBox");
+                box.toggle();
+            });
+
+            $("#legendBoxClose").click(function () {
+                var box = $("#legendBox");
+                box.toggle();
+            });
+
+            $("#mapInstructionClose").click(function () {
+                var box = $("#mapInstruction");
+                box.toggle();
+            });
+        });
+
+        //图层控制
+        function layerControl() {
+            var box = $("#layerControlBox");
+            box.toggle();
+        }
+
+        //地图说明
+        function OpenInformation() {
+            var box = $("#mapInstruction");
+            box.toggle();
+        }
+
+        //图层控制实现
+		function on_hide(n) {  
+        var svgViewer = document.getElementById("svgEmbed");
+		var SVGDoc = svgViewer.getSVGDocument();
+		var SVGRoot = SVGDoc.documentElement;
+		var rect = SVGDoc.getElementById("layer_"+n);
+		rect.style.display = (document.getElementById("checkbox_"+n).checked == true) ? "block" : "none";
+        }
+       
+    </script>
+
+
+</body>
+</html>
